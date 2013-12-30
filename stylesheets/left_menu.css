@@ -1,0 +1,73 @@
+/***************************************************************************/
+/*              LEFT MENU BAR                                              */
+/***************************************************************************/
+
+#header > h1 {
+  margin-top: 5px !important;
+  margin-left: 5px !important;
+}
+
+#header {
+  height: 30px!important;
+  min-height: 30px;
+}
+
+
+#main {
+  margin-left: 165px;  
+}
+
+#quick-search {
+  float: right !important;
+  margin-right: 8px !important;
+}
+
+#sidebar {
+width: 25% !important; 
+}
+
+#content {
+width: 71% !important;
+}
+
+#main.nosidebar #content {
+  width: auto !important;
+}
+
+#main-menu {
+  position: absolute;
+  padding: 0 !important;
+  width: 150px!important;
+  top: 54px!important;
+  left: 15px!important;
+  font-size: 12px!important;
+}
+
+#main-menu li a {
+  color: #555!important;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+#main-menu li {
+  float: none !important;
+  list-style-type: none !important;
+  margin: 0 !important;
+  border-left: 1px solid #dbdee0;
+  border-bottom: 1px solid #dbdee0;
+}
+
+#main-menu li  a:hover, #main-menu li  a:visited:hover {
+  background-color: #EFEDE7 !important;
+  color: #333 !important;
+}
+
+#main-menu li a.selected, #main-menu li a.selected:hover {
+  background-color: #ced1d4!important; 
+  color: #222 !important;
+}
+
+#main-menu ul {
+  width: 150px !important;  
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.6);
+}

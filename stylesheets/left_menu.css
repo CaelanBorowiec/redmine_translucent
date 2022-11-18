@@ -42,7 +42,7 @@
 }
 
 #main-menu li a {
-  color: #555 !important;
+  color: #333 !important;
   padding-top: 7px;
   padding-bottom: 7px;
 }
@@ -58,7 +58,7 @@
 
 #main-menu li a:hover, #main-menu li a:visited:hover {
   background-color: #EFEDE7 !important;
-  color: #333 !important;
+  color: #000 !important;
 }
 
 #main-menu li a.selected, #main-menu li a.selected:hover {
@@ -72,5 +72,5 @@
 
 #main-menu ul {
   width: 200px !important;
-  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.6);
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.7);
 }

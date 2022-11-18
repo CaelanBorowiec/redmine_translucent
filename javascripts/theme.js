@@ -19,11 +19,6 @@
          images[i].src = highres;
        }
      }
-
-     // Is there a better way to do this than hardcoding this path?
-     $.getJSON("/themes/redmine_translucent/javascripts/wallpapers.json", function(data) {
-       debugger
-     });
    });
  } else {
    document.observe("dom:loaded", function() {
@@ -49,6 +44,27 @@
 
    });
  }
+ (() {
+   const wallpapers = {
+     "backgrounds": [{
+         "name": "antelope_canyon",
+         "file": "antelope_canyon.avif",
+         "creator": "",
+         "credit_url": "",
+         "theme_subclass": ""
+       },
+       {
+         "name": "fall_lake",
+         "file": "fall_lake.avif",
+         "creator": "",
+         "credit_url": "",
+         "theme_subclass": ""
+       }
+     ]
+   };
+   console.log(wallpapers)
+ })();
+
 
  function findImagesByRegexp(regexp, parentNode) {
    var images = Array.prototype.slice.call((parentNode || document).getElementsByTagName('img'));

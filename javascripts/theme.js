@@ -51,14 +51,14 @@
    (function() {
      const wallpapers = {
        "backgrounds": [{
-           "name": "",
+           "name": "Antelope Canyon",
            "file": "antelope_canyon.avif",
            "creator": "Vlad D",
            "credit_url": "https://unsplash.com/photos/hEFQnP_i1eY",
            "theme_subclass": ""
          },
          {
-           "name": "",
+           "name": "Cumulus Clouds",
            "file": "cumulus_clouds.avif",
            "creator": "Zbynek Burival",
            "credit_url": "https://unsplash.com/photos/8iZG31eXkks",
@@ -72,7 +72,7 @@
            "theme_subclass": ""
          },
          {
-           "name": "",
+           "name": "Yellow Wave",
            "file": "yellow_wave.avif",
            "creator": "Texco Kwok",
            "credit_url": "https://unsplash.com/photos/Otz-5OfAiA4",
@@ -83,6 +83,13 @@
            "file": "greece_clouds.avif",
            "creator": "Jason Blackeye",
            "credit_url": "https://unsplash.com/photos/ap3LXI0fPJY",
+           "theme_subclass": ""
+         },
+         {
+           "name": "Forest Heat",
+           "file": "forst_heat.avif",
+           "creator": "Johannes Plenio",
+           "credit_url": "https://unsplash.com/photos/RwHv7LgeC7s",
            "theme_subclass": ""
          }
        ]

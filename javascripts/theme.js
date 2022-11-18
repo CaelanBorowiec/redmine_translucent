@@ -1,5 +1,6 @@
  if (window.jQuery) {
    $(document).ready(function() {
+     wallpaperPicker();
      if (window.devicePixelRatio > 1) {
        var images = findImagesByRegexp('contacts_thumbnail', document);
 
@@ -22,6 +23,7 @@
    });
  } else {
    document.observe("dom:loaded", function() {
+     wallpaperPicker();
      if (window.devicePixelRatio > 1) {
        var images = findImagesByRegexp('thumbnail', document);
 
@@ -45,39 +47,40 @@
    });
  }
 
- (function() {
-   const wallpapers = {
-     "backgrounds": [{
-         "name": "antelope_canyon",
-         "file": "antelope_canyon.avif",
-         "creator": "",
-         "credit_url": "",
-         "theme_subclass": ""
-       },
-       {
-         "name": "fall_lake",
-         "file": "fall_lake.avif",
-         "creator": "",
-         "credit_url": "",
-         "theme_subclass": ""
+ function wallpaperPicker() {
+   (function() {
+     const wallpapers = {
+       "backgrounds": [{
+           "name": "antelope_canyon",
+           "file": "antelope_canyon.avif",
+           "creator": "",
+           "credit_url": "",
+           "theme_subclass": ""
+         },
+         {
+           "name": "fall_lake",
+           "file": "fall_lake.avif",
+           "creator": "",
+           "credit_url": "",
+           "theme_subclass": ""
+         }
+       ]
+     };
+
+     // Get a "random" number that changes hourly wrapped to the number of backgrounds
+     let i = function(max = wallpapers.backgrounds.length) {
+       let date = new Date();
+       const mod = function(x, m) {
+         return (x % m + m) % m;
        }
-     ]
-   };
+       let pos = Math.abs(date.getDate() - date.getHours());
+       return mod(pos, max);
+     }()
 
-   // Get a "random" number that changes hourly wrapped to the number of backgrounds
-   let i = function(max = wallpapers.backgrounds.length) {
-     let date = new Date();
-     const mod = function(x, m) {
-       return (x % m + m) % m;
-     }
-     let pos = Math.abs(date.getDate() - date.getHours());
-     return mod(pos, max);
-   }()
-
-   let current = wallpapers.backgrounds[i];
-   $("#wrapper").css("background-image", `url(/themes/redmine_translucent/images/wallpapers/${current.file})`)
- })();
-
+     let current = wallpapers.backgrounds[i];
+     $("#wrapper").css("background-image", `url(/themes/redmine_translucent/images/wallpapers/${current.file})`)
+   })();
+ }
 
  function findImagesByRegexp(regexp, parentNode) {
    var images = Array.prototype.slice.call((parentNode || document).getElementsByTagName('img'));

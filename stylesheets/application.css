@@ -222,11 +222,13 @@ div#content h2.contacts_header {
 #projects-index ul.projects li.root {
   border-bottom: 1px solid #dbdee0;
   margin-bottom: 0px !important;
+  padding: 15px 0px;
 }
 
 #projects-index ul.projects li.child {
   margin-top: 1em;
   margin-bottom: 1em;
+  margin-left: 2em;
 }
 
 #projects-index ul.projects li.root:hover {

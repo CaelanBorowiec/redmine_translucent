@@ -19,6 +19,10 @@
          images[i].src = highres;
        }
      }
+
+     $.getJSON("bgs.json", function(data) {
+       console.log(data)
+     });
    });
  } else {
    document.observe("dom:loaded", function() {

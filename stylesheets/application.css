@@ -405,7 +405,7 @@ tr.odd.priority-3 td.priority, tr.even.priority-3 td.priority {
 
 /* Issues grid styles by priorities (provided by Wynn Netherland) */
 table.list tr.issue a {
-  color: #666;
+  color: #222;
 }
 
 /*Immediately*/
@@ -543,6 +543,20 @@ input[type="submit"] {
   cursor: pointer;
   border: none;
   margin: 5px 0px;
+}
+
+/* Pagination */
+.pagination ul.pages li a, .pagination ul.pages li span {
+  padding: 5px 15px;
+}
+
+.pagination ul.pages li {
+  padding: 3px;
+  border: 1px solid #999;
+}
+
+span.pagination {
+  color: #333;
 }
 
 /* Misc */

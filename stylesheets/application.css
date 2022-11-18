@@ -212,7 +212,11 @@ div#content h2.contacts_header {
 }
 
 #projects-index ul.projects li.root .root {
-  padding: 10px 19px;
+  padding: 10px 20px;
+}
+
+#projects-index a.icon-user, a.icon-bookmarked-project {
+  background-position: 100% 50%;
 }
 
 #projects-index ul.projects li.root {

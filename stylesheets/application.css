@@ -379,8 +379,21 @@ div.contact.details, div.deal.details {
 }
 
 #footer, #footer a {
-  color: #777;
   padding: 8px 0px;
+}
+
+a, a:link, a:visited {
+  color: #3a8eb8;
+}
+
+span.footernote::before {
+  content: "|";
+  margin: 0 1ch;
+}
+
+/* Fix leading space on redmine credits */
+#footer .footernote:first-of-type:before {
+  margin-left: 3px;
 }
 
 /* Headers */

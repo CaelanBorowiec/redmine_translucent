@@ -20,7 +20,7 @@
        }
      }
 
-     $.getJSON("bgs.json", function(data) {
+     $.getJSON("./wallpapers.json", function(data) {
        console.log(data)
      });
    });

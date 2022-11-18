@@ -51,17 +51,38 @@
    (function() {
      const wallpapers = {
        "backgrounds": [{
-           "name": "antelope_canyon",
+           "name": "",
            "file": "antelope_canyon.avif",
-           "creator": "",
-           "credit_url": "",
+           "creator": "Vlad D",
+           "credit_url": "https://unsplash.com/photos/hEFQnP_i1eY",
            "theme_subclass": ""
          },
          {
-           "name": "fall_lake",
+           "name": "",
+           "file": "cumulus_clouds.avif",
+           "creator": "Zbynek Burival",
+           "credit_url": "https://unsplash.com/photos/8iZG31eXkks",
+           "theme_subclass": ""
+         },
+         {
+           "name": "",
            "file": "fall_lake.avif",
-           "creator": "",
-           "credit_url": "",
+           "creator": "Aaron Burden",
+           "credit_url": "https://unsplash.com/photos/aj_NElqhu6Q",
+           "theme_subclass": ""
+         },
+         {
+           "name": "",
+           "file": "yellow_wave.avif",
+           "creator": "Texco Kwok",
+           "credit_url": "https://unsplash.com/photos/Otz-5OfAiA4",
+           "theme_subclass": ""
+         },
+         {
+           "name": "",
+           "file": "greece_clouds.avif",
+           "creator": "Jason Blackeye",
+           "credit_url": "https://unsplash.com/photos/ap3LXI0fPJY",
            "theme_subclass": ""
          }
        ]
@@ -80,7 +101,7 @@
      let current = wallpapers.backgrounds[i];
      $("#wrapper").css("background-image", `url(/themes/redmine_translucent/images/wallpapers/${current.file})`);
      $('<span>').addClass('footernote').html(`<a href="https://github.com/CaelanBorowiec/redmine_translucent" target="_blank">Redmine Translucent</a> Theme by <a href="https://caelanb.me/" target="_blank">Caelan Borowiec</a>`).appendTo('#footer');
-     $('<span>').addClass('footernote').html(`Photo "${current.name}" by <a href="${current.credit_url}" target="_blank">${current.creator}</a>`).appendTo('#footer');
+     $('<span>').addClass('footernote').html(`Photo ${current.name} by <a href="${current.credit_url}" target="_blank">${current.creator}</a>`).appendTo('#footer');
    })();
  }
 

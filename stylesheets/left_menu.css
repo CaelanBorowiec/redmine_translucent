@@ -53,6 +53,7 @@
   margin: 0 !important;
   border-left: 1px solid #dbdee0;
   border-bottom: 1px solid #dbdee0;
+  display: block;
 }
 
 #main-menu li a:hover, #main-menu li a:visited:hover {
@@ -63,6 +64,10 @@
 #main-menu li a.selected, #main-menu li a.selected:hover {
   background-color: #ced1d4 !important;
   color: #222 !important;
+}
+
+#main-menu div.tabs-buttons {
+  display: none;
 }
 
 #main-menu ul {

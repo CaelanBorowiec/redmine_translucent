@@ -126,7 +126,7 @@ div.filters h2 .scope_title a {
 /* content area */
 /****************/
 #main {
-  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.7);
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.6);
 }
 
 /* Welcome area and Project overview */
@@ -178,7 +178,7 @@ div#content>.message.details>h2,
 div#content>.board.details>h2,
 div#content>#add-document>h2,
 div#content div.wiki h1 {
-  background: #e9ebec;
+  background: #ceefff;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 20px;
@@ -318,7 +318,7 @@ div#welcome-store-content h4 {
 }
 
 #content, #main.nosidebar #content {
-  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.75);
   border: 1px solid #dbdee0;
 }
 

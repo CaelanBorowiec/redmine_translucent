@@ -78,7 +78,9 @@
      }()
 
      let current = wallpapers.backgrounds[i];
-     $("#wrapper").css("background-image", `url(/themes/redmine_translucent/images/wallpapers/${current.file})`)
+     $("#wrapper").css("background-image", `url(/themes/redmine_translucent/images/wallpapers/${current.file})`);
+     $('<span>').addClass('footernote').html(`<a href="https://github.com/CaelanBorowiec/redmine_translucent" target="_blank">Redmine Translucent</a> Theme by <a href="https://caelanb.me/" target="_blank">Caelan Borowiec</a>`).appendTo('#footer');
+     $('<span>').addClass('footernote').html(`Photo "${current.name}" by <a href="${current.credit_url}" target="_blank">${current.creator}</a>`).appendTo('#footer');
    })();
  }
 

@@ -21,7 +21,7 @@
      }
 
      // Is there a better way to do this than hardcoding this path?
-     $.getJSON("./themes/redmine_translucent/wallpapers.json", function(data) {
+     $.getJSON("./themes/redmine_translucent/javascripts/wallpapers.json", function(data) {
        console.log(data)
      });
    });

@@ -1,4 +1,4 @@
-# Redmine Translucent Theme
+# Redmine Translucent Theme 1.1.1
 
 This is a simple modern translucent theme with background photos and a left side menu. It has been forked and updated from the [bavarian_dawn](https://github.com/miyanaga/bavarian_dawn) theme to add compatibility for Redmine 5 and provide a variety of layout improvements.
 
@@ -19,6 +19,10 @@ Easily customizable photo wallpaper backgrounds that change hourly.
 ### 1.0.0
 * Initial release of redesigned theme based on bavarian_dawn 0.0.1.
 * Added background changer javascript and small library of backgrounds.
+
+### 1.1.1
+* Top left Redmine logo is now clickable to return to the site root.
+* Fixed tooltips having white-on-white text.
 
 ## Installation
 

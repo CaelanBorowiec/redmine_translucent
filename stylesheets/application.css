@@ -30,18 +30,25 @@
   font-size: 30px;
   font-family: Rubik;
   letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: space-between;
+  height: 38px;
 }
-
 
 #header h1 .breadcrumbs {
-    font-size: .4em;
+  font-size: .4em;
 }
+
 #header h1 .separator {
-    display: none;
+  display: none;
 }
+
 #header h1 .current-project {
-    font-size: 20px;
-    display: block;
+  font-size: 20px;
+  display: block;
 }
 
 #header>h1.linklogo {

@@ -1,5 +1,5 @@
  if (window.jQuery) {
-   $(document).ready(function() {
+   $(document).ready(function () {
      wallpaperPicker();
      var logo_img = $("#header > h1").css("background-image").replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, '')
      $("#header > h1").addClass('linklogo').before(`<a href="/"><img src="${logo_img}"></a>`)
@@ -25,7 +25,8 @@
      }
    });
  } else {
-   document.observe("dom:loaded", function() {
+   document.observe("dom:loaded", function () {
+     document.getElementById("wrapper").style.backgroundImage = "url(/themes/redmine_translucent/images/wallpapers/fall_lake.avif)";
      if (window.devicePixelRatio > 1) {
        var images = findImagesByRegexp('thumbnail', document);
 
@@ -50,7 +51,7 @@
  }
 
  function wallpaperPicker() {
-   (function() {
+   (function () {
      const wallpapers = {
        "backgrounds": [{
            "name": "Antelope Canyon",
@@ -78,7 +79,7 @@
            "file": "yellow_wave.avif",
            "creator": "Texco Kwok",
            "credit_url": "https://unsplash.com/photos/Otz-5OfAiA4",
-           "theme_subclass": ""
+           "theme_subclass": "sand"
          },
          {
            "name": "",
@@ -98,9 +99,9 @@
      };
 
      // Get a "random" number that changes hourly wrapped to the number of backgrounds
-     let i = function(max = wallpapers.backgrounds.length) {
+     let i = function (max = wallpapers.backgrounds.length) {
        let date = new Date();
-       const mod = function(x, m) {
+       const mod = function (x, m) {
          return (x % m + m) % m;
        }
        let pos = Math.abs(date.getDate() - date.getHours());
@@ -111,6 +112,8 @@
      $("#wrapper").css("background-image", `url(/themes/redmine_translucent/images/wallpapers/${current.file})`);
      $('<span>').addClass('footernote').html(`<a href="https://github.com/CaelanBorowiec/redmine_translucent" target="_blank">Redmine Translucent</a> Theme by <a href="https://caelanb.me/" target="_blank">Caelan Borowiec</a>`).appendTo('#footer');
      $('<span>').addClass('footernote').html(`Photo ${current.name} by <a href="${current.credit_url}" target="_blank">${current.creator}</a>`).appendTo('#footer');
+     if (current.theme_subclass)
+       $("body").addClass(current.theme_subclass);
    })();
  }
 

@@ -1,6 +1,11 @@
 @import url(../../../stylesheets/application.css);
 @import url(left_menu.css);
 
+@font-face {
+  font-family: Rubik;
+  src: url(../fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+
 /* Simple dark version 0.0.1 by AlphaNodes GmbH http://alphanodes.com */
 #header {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
@@ -665,6 +670,10 @@ input[type="submit"] {
 .pagination ul.pages li {
   padding: 3px;
   border: 1px solid #999;
+}
+
+ul.pages {
+    font-family: Rubik;
 }
 
 span.pagination {

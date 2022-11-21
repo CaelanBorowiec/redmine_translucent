@@ -78,7 +78,7 @@
            "file": "yellow_wave.avif",
            "creator": "Texco Kwok",
            "credit_url": "https://unsplash.com/photos/Otz-5OfAiA4",
-           "theme_subclass": ""
+           "theme_subclass": "sand"
          },
          {
            "name": "",

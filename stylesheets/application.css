@@ -222,6 +222,10 @@ div#content div.wiki h1 {
   border-bottom: 1px solid #dbdee0;
 }
 
+body.sand div#content > h2 {
+  background: #fff4ce;
+}
+
 h2 img.gravatar {
   margin-bottom: -8px;
 }

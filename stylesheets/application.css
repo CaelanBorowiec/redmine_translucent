@@ -423,8 +423,17 @@ div.details {
   background: #fff !important;
 }
 
+#tab-content-history {
+  background: #ffffffba;
+  padding: 0;
+}
+
 #history div.journal {
-  border-top: 1px solid #000 !important;
+  margin: 10px;
+}
+
+#history div.journal:not(:first-child) {
+  border-top: 1px solid #000;
 }
 
 #history {
@@ -682,6 +691,7 @@ input[type="submit"] {
   vertical-align: top;
   transition: background 100ms linear;
 }
+
 input[type="submit"]:hover {
   background: #58c3f7;
 }
@@ -699,8 +709,9 @@ form.edit_issue a[onclick="$('#update').hide(); return false;"] {
   vertical-align: top;
   transition: background 100ms linear;
 }
+
 form.edit_issue a[onclick="$('#update').hide(); return false;"]:hover {
-  background: none repeat scroll 0 0 #ff1313;
+  background: none repeat scroll 0 0 #fb3c3c;
   text-decoration: none;
 }
 
@@ -811,10 +822,6 @@ div.journal>div {
   border-radius: 0px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
-}
-
-#history div.journal {
-  border-top: 1px solid #ddd;
 }
 
 /* Modal form*/

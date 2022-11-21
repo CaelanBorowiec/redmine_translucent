@@ -32,6 +32,18 @@
   letter-spacing: 1px;
 }
 
+
+#header h1 .breadcrumbs {
+    font-size: .4em;
+}
+#header h1 .separator {
+    display: none;
+}
+#header h1 .current-project {
+    font-size: 20px;
+    display: block;
+}
+
 #header>h1.linklogo {
   background: unset;
   padding: 0px 20px;
@@ -92,7 +104,7 @@ body {
 /* Top Menu area */
 #top-menu {
   background: #34383c;
-  padding: 7px 10px 2px 20px;
+  padding: 12px 10px 7px 20px;
   background-image: url(../images/textures/prism.png);
   background-repeat: repeat;
 }

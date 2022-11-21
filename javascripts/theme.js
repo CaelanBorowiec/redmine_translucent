@@ -1,6 +1,9 @@
  if (window.jQuery) {
    $(document).ready(function() {
      wallpaperPicker();
+     var logo_img = $("#header > h1").css("background-image").replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, '')
+     $("#header > h1").addClass('linklogo').before(`<a href="/"><img src="${logo_img}"></a>`)
+
      if (window.devicePixelRatio > 1) {
        var images = findImagesByRegexp('contacts_thumbnail', document);
 
@@ -23,7 +26,6 @@
    });
  } else {
    document.observe("dom:loaded", function() {
-     wallpaperPicker();
      if (window.devicePixelRatio > 1) {
        var images = findImagesByRegexp('thumbnail', document);
 
@@ -87,7 +89,7 @@
          },
          {
            "name": "Forest Heat",
-           "file": "forst_heat.avif",
+           "file": "forest_heat.avif",
            "creator": "Johannes Plenio",
            "credit_url": "https://unsplash.com/photos/RwHv7LgeC7s",
            "theme_subclass": ""

@@ -334,13 +334,20 @@ div#content>div.contextual {
   border-left: 1px solid #dbdee0;
   border-bottom: 1px solid #dbdee0;
   border-top: 1px solid #dbdee0;
-  margin-right: -10px !important;
-  margin-top: -7px !important;
+}
+
+.contextual .drdn-content {
+  right: 0px;
+  top: -54px;
 }
 
 div#content>div.contextual a {
   display: inline-block;
-  padding: 20px 15px 19px 20px;
+  padding: 10px 18px 7px 24px;
+}
+
+.drdn-items>a.icon {
+  margin-bottom: -5px;
 }
 
 #roadmap {
@@ -423,9 +430,9 @@ div.details {
   background: #fff !important;
 }
 
-#tab-content-history {
+div#tab-content-history.tab-content {
   background: #ffffffba;
-  padding: 0;
+  padding-top: 15px;
 }
 
 #history div.journal {

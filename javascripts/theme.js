@@ -1,6 +1,6 @@
  if (window.jQuery) {
-   $(document).ready(function() {
      wallpaperPicker();
+   $(document).ready(function() {
      var logo_img = $("#header > h1").css("background-image").replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, '')
      $("#header > h1").addClass('linklogo').before(`<a href="/"><img src="${logo_img}"></a>`)
 

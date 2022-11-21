@@ -236,6 +236,13 @@ h2 img.gravatar {
 #add-document {
   margin-bottom: 20px;
 }
+div#activity>h3 {
+background-color: unset;
+}
+div#activity dl, #search-results {
+    background: #ffffffba;
+    padding: 2em;
+}
 
 div#content h2.contacts_header {
   padding-bottom: 10px;

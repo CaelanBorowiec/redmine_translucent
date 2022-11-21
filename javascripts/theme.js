@@ -1,4 +1,8 @@
  if (window.jQuery) {
+
+  $(function () {
+     wallpaperPicker();
+  });
    $(document).ready(function() {
      wallpaperPicker();
      var logo_img = $("#header > h1").css("background-image").replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, '')

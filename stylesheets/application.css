@@ -248,8 +248,13 @@ div#content h2.contacts_header {
 
 /* Project index */
 #projects-index ul.projects {
-  border: 1px solid #dbdee0;
-  background: #fff;
+  /* border: 1px solid #dbdee0;
+  background: #fff; */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 #projects-index ul.projects li.root .root {
@@ -262,9 +267,10 @@ a.icon-bookmarked-project {
 }
 
 #projects-index ul.projects li.root {
-  border-bottom: 1px solid #dbdee0;
+  /* border-bottom: 1px solid #dbdee0;
   margin-bottom: 0px !important;
-  padding: 15px 0px;
+  padding: 15px 0px; */
+  background: #fff;
 }
 
 #projects-index ul.projects li.child {

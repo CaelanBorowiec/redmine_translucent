@@ -28,13 +28,13 @@
   /* Change this in order to set your own logo*/
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
   font-size: 22px !important;
+  font-family: Rubik;
+  letter-spacing: 1px;
 }
 
 #header>h1.linklogo {
   background: unset;
-  padding: 5px 25px;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
-  font-size: 22px !important;
+  padding: 0px 20px;
 }
 
 #header>a {
@@ -236,17 +236,32 @@ h2 img.gravatar {
   margin-bottom: -8px;
 }
 
+h2 img.gravatar,
+h3 img.gravatar {
+  margin-right: 5px;
+  margin-top: -2px;
+}
+
 #add-news,
 #add-message,
 #add-document {
   margin-bottom: 20px;
 }
+
 div#activity>h3 {
-background-color: unset;
+  background-color: unset;
 }
-div#activity dl, #search-results {
-    background: #ffffffba;
-    padding: 2em;
+
+div#activity dl,
+#search-results {
+  background: #ffffffba;
+  padding: 2em;
+}
+
+article.news-article {
+  background: #ffffffba;
+  padding: 2em;
+  margin: 10px 0;
 }
 
 div#content h2.contacts_header {
@@ -262,11 +277,11 @@ div#content h2.contacts_header {
 #projects-index ul.projects {
   /* border: 1px solid #dbdee0;
   background: #fff; */
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    align-items: flex-start;
-    justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 #projects-index ul.projects li.root .root {
@@ -673,7 +688,11 @@ input[type="submit"] {
 }
 
 ul.pages {
-    font-family: Rubik;
+  font-family: Rubik;
+}
+
+ul.pages .page {
+  background: whitesmoke;
 }
 
 span.pagination {

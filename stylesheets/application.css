@@ -825,6 +825,10 @@ div.journal>div {
   margin-top: 45px;
 }
 
+div#content .tabs {
+  margin-bottom: 0;
+}
+
 #content .tabs ul li a {
   border-radius: 0px;
   -webkit-border-radius: 0px;

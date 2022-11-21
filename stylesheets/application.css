@@ -1,6 +1,11 @@
 @import url(../../../stylesheets/application.css);
 @import url(left_menu.css);
 
+@font-face {
+  font-family: Rubik;
+  src: url(../fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+
 /* Simple dark version 0.0.1 by AlphaNodes GmbH http://alphanodes.com */
 #header {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
@@ -22,14 +27,14 @@
   padding: 5px 65px;
   /* Change this in order to set your own logo*/
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
-  font-size: 22px !important;
+  font-size: 30px;
+  font-family: Rubik;
+  letter-spacing: 1px;
 }
 
 #header>h1.linklogo {
   background: unset;
-  padding: 5px 25px;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
-  font-size: 22px !important;
+  padding: 0px 20px;
 }
 
 #header>a {
@@ -192,13 +197,17 @@ body.controller-projects div.box p {
 }
 
 body.controller-projects div.box {
-  padding: 0px;
+  padding: 10px;
 }
 
 body.controller-projects div.box h3 {
   border-bottom: 1px solid #dbdee0;
   background-color: #f7f7f8;
   padding: 8px 8px 8px 18px;
+}
+
+body.controller-projects div.box h3.icon-group{
+  padding-left: 22px;
 }
 
 div#content>h2,
@@ -231,10 +240,32 @@ h2 img.gravatar {
   margin-bottom: -8px;
 }
 
+h2 img.gravatar,
+h3 img.gravatar {
+  margin-right: 5px;
+  margin-top: -2px;
+}
+
 #add-news,
 #add-message,
 #add-document {
   margin-bottom: 20px;
+}
+
+div#activity>h3 {
+  background-color: unset;
+}
+
+div#activity dl,
+#search-results {
+  background: #ffffffba;
+  padding: 2em;
+}
+
+article.news-article {
+  background: #ffffffba;
+  padding: 2em;
+  margin: 10px 0;
 }
 
 div#content h2.contacts_header {
@@ -248,8 +279,13 @@ div#content h2.contacts_header {
 
 /* Project index */
 #projects-index ul.projects {
-  border: 1px solid #dbdee0;
-  background: #fff;
+  /* border: 1px solid #dbdee0;
+  background: #fff; */
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 #projects-index ul.projects li.root .root {
@@ -262,9 +298,10 @@ a.icon-bookmarked-project {
 }
 
 #projects-index ul.projects li.root {
-  border-bottom: 1px solid #dbdee0;
+  /* border-bottom: 1px solid #dbdee0;
   margin-bottom: 0px !important;
-  padding: 15px 0px;
+  padding: 15px 0px; */
+  background: #fff;
 }
 
 #projects-index ul.projects li.child {
@@ -301,13 +338,20 @@ div#content>div.contextual {
   border-left: 1px solid #dbdee0;
   border-bottom: 1px solid #dbdee0;
   border-top: 1px solid #dbdee0;
-  margin-right: -10px !important;
-  margin-top: -7px !important;
+}
+
+.contextual .drdn-content {
+  right: 0px;
+  top: -54px;
 }
 
 div#content>div.contextual a {
   display: inline-block;
-  padding: 20px 15px 19px 20px;
+  padding: 10px 18px 7px 24px;
+}
+
+.drdn-items>a.icon {
+  margin-bottom: -5px;
 }
 
 #roadmap {
@@ -390,8 +434,17 @@ div.details {
   background: #fff !important;
 }
 
+div#tab-content-history.tab-content {
+  background: #ffffffba;
+  padding-top: 15px;
+}
+
 #history div.journal {
-  border-top: 1px solid #000 !important;
+  margin: 10px;
+}
+
+#history div.journal:not(:first-child) {
+  border-top: 1px solid #000;
 }
 
 #history {
@@ -612,6 +665,12 @@ select {
   border: 1px solid #d7d7d7;
 }
 
+select {
+  font-family: 'Rubik';
+  padding-right: 20px;
+  padding-left: 5px;
+}
+
 input[type="text"],
 input[type="password"] {
   padding: 3px;
@@ -629,6 +688,20 @@ option {
   padding: 3px;
 }
 
+/* Calendar */
+table.cal td p.day-num {
+  padding-right: 2px;
+}
+
+table.cal td.week-number {
+  background-color: #d8d8d8;
+  padding: 6px;
+}
+
+table.cal thead th {
+  background-color: #d8d8d8;
+}
+
 /* Button styles */
 input[type="submit"] {
   background: none repeat scroll 0 0 #36a9e1;
@@ -636,11 +709,35 @@ input[type="submit"] {
   border-radius: 5px;
   display: inline-block;
   font-size: 14px;
-  line-height: 1.5;
-  padding: 6px 12px;
   cursor: pointer;
   border: none;
-  margin: 5px 0px;
+  height: 35px;
+  width: 120px;
+  vertical-align: top;
+  transition: background 100ms linear;
+}
+
+input[type="submit"]:hover {
+  background: #58c3f7;
+}
+
+/* Be cooler if this link had a class */
+form.edit_issue a[onclick="$('#update').hide(); return false;"] {
+  background: none repeat scroll 0 0 #ff0000;
+  color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  padding: 10px 24px;
+  vertical-align: top;
+  transition: background 100ms linear;
+}
+
+form.edit_issue a[onclick="$('#update').hide(); return false;"]:hover {
+  background: none repeat scroll 0 0 #fb3c3c;
+  text-decoration: none;
 }
 
 /* Pagination */
@@ -654,6 +751,14 @@ input[type="submit"] {
   border: 1px solid #999;
 }
 
+ul.pages {
+  font-family: Rubik;
+}
+
+ul.pages .page {
+  background: whitesmoke;
+}
+
 span.pagination {
   color: #333;
 }
@@ -664,8 +769,18 @@ span.pagination {
 }
 
 /* Wiki page */
-div#content>div.wiki {
-  padding: 0px !important;
+.wiki {
+  background: #fcfcfc;
+  padding: 2em;
+}
+
+.wiki-page{
+  margin-bottom: 22px;
+}
+
+.note .wiki {
+  /* less padding on ticket notes */
+  padding: 7px 0;
 }
 
 .wiki img {
@@ -737,14 +852,14 @@ div.journal>div {
   margin-top: 45px;
 }
 
+div#content .tabs {
+  margin-bottom: 0;
+}
+
 #content .tabs ul li a {
   border-radius: 0px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
-}
-
-#history div.journal {
-  border-top: 1px solid #ddd;
 }
 
 /* Modal form*/

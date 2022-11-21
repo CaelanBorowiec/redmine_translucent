@@ -398,6 +398,10 @@ div.issue.tooltip {
   margin: 0 0 6px 0;
 }
 
+div.ui-tooltip{
+  color: #505050;
+}
+
 div.contact.details,
 div.deal.details {
   padding: 15px !important;

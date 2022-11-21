@@ -705,8 +705,9 @@ span.pagination {
 }
 
 /* Wiki page */
-div#content>div.wiki {
-  padding: 0px !important;
+.wiki {
+    background: #fcfcfc;
+    padding: 2em;
 }
 
 .wiki img {

@@ -16,13 +16,17 @@ Easily customizable photo wallpaper backgrounds that change hourly.
 
 ## Changelog
 
-### 1.0.0
-* Initial release of redesigned theme based on bavarian_dawn 0.0.1.
-* Added background changer javascript and small library of backgrounds.
+### 1.2.0
+* Implement image theme subclasses
 
 ### 1.1.1
 * Top left Redmine logo is now clickable to return to the site root.
 * Fixed tooltips having white-on-white text.
+
+### 1.0.0
+* Initial release of redesigned theme based on bavarian_dawn 0.0.1.
+* Added background changer javascript and small library of backgrounds.
+
 
 ## Installation
 

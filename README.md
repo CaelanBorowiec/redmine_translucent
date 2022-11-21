@@ -16,14 +16,20 @@ Easily customizable photo wallpaper backgrounds that change hourly.
 
 ## Changelog
 
+### 1.4.0
+* Restyled top navigation bar.
+* Restyled and fixed layout issues with page title and breadcrumbs.
+* Large admin menu.
+* Minor tweaks to page controls.
+
 ### 1.3.0
-* Many contrast and margining improvements to projects, activity, news, wiki and ticket pages
-* All external links now open in a new tab
+* Many contrast and margining improvements to projects, activity, news, wiki and ticket pages.
+* All external links now open in a new tab.
 
 ### 1.2.0
 * Implement image theme subclasses
-* Dunes image now applies sand subtheme (changes title bars to sand color)
-* Disabled default photo background to eliminate distracting photo switching after initial page draw
+* Dunes image now applies sand subtheme (changes title bars to sand color).
+* Disabled default photo background to eliminate distracting photo switching after initial page draw.
 
 ### 1.1.1
 * Top left Redmine logo is now clickable to return to the site root.

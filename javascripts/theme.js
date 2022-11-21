@@ -26,7 +26,7 @@
    });
  } else {
    document.observe("dom:loaded", function () {
-     //  document.getElementById("wrapper").style.backgroundImage = "url(/themes/redmine_translucent/images/wallpapers/fall_lake.avif)";
+     document.getElementById("wrapper").style.backgroundImage = "url(/themes/redmine_translucent/images/wallpapers/fall_lake.avif)";
      if (window.devicePixelRatio > 1) {
        var images = findImagesByRegexp('thumbnail', document);
 
@@ -51,10 +51,6 @@
  }
 
  function wallpaperPicker() {
-  $("#wrapper").css(
-    "background-image",
-    `unset`
-  );
    (function () {
      const wallpapers = {
        "backgrounds": [{

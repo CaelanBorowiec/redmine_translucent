@@ -10,15 +10,15 @@
 }
 
 #wrapper {
-  background-image: url(../images/wallpapers/fall_lake.avif);
-  /* Change this in order to set your own background image */
+  /* background-image: url(../images/wallpapers/fall_lake.avif); */
+  /* Enable and change this in order to set your own background image */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   /* transition: background-image 1s; */
 }
 
-#header > h1 {
+#header>h1 {
   background: url(../images/logo.png) no-repeat 10px 20%;
   padding: 5px 65px;
   /* Change this in order to set your own logo*/
@@ -26,21 +26,22 @@
   font-size: 22px !important;
 }
 
-#header > h1.linklogo {
+#header>h1.linklogo {
   background: unset;
   padding: 5px 25px;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
   font-size: 22px !important;
 }
-#header > a {
+
+#header>a {
   float: left;
   margin-top: 7px;
   margin-left: 15px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min-device-pixel-ratio: 2) {
-  #header > h1 {
+only screen and (min-device-pixel-ratio: 2) {
+  #header>h1 {
     /* Reference the @2x Sprite */
     background-image: url(../images/logo-2x.png);
     /* Translate the @2x sprite's dimensions back to 1x */
@@ -131,7 +132,7 @@ div.flash {
   border: 1px solid;
 }
 
-div#content > div.flash {
+div#content>div.flash {
   border: 0px solid;
   padding: 9px 35px 10px;
   margin: -6px -10px 6px -10px;
@@ -170,8 +171,8 @@ body.controller-welcome .splitcontentright div.box p {
   margin: 10px 20px;
 }
 
-body.controller-welcome .splitcontentleft div.box > a,
-body.controller-welcome .splitcontentright div.box > a {
+body.controller-welcome .splitcontentleft div.box>a,
+body.controller-welcome .splitcontentright div.box>a {
   margin: 10px;
   display: block;
 }
@@ -201,14 +202,14 @@ body.controller-projects div.box h3 {
   padding: 8px 8px 8px 18px;
 }
 
-div#content > h2,
+div#content>h2,
 div#content h2.contacts_header,
-div#content > div.filters h2,
-div#content > #add-news > h2,
-div#content > #add-message > h2,
-div#content > .message.details > h2,
-div#content > .board.details > h2,
-div#content > #add-document > h2,
+div#content>div.filters h2,
+div#content>#add-news>h2,
+div#content>#add-message>h2,
+div#content>.message.details>h2,
+div#content>.board.details>h2,
+div#content>#add-document>h2,
 div#content div.wiki h1 {
   background: #ceefff;
   padding-top: 15px;
@@ -223,7 +224,7 @@ div#content div.wiki h1 {
   border-bottom: 1px solid #dbdee0;
 }
 
-body.sand div#content > h2 {
+body.sand div#content>h2 {
   background: #fff4ce;
 }
 
@@ -296,7 +297,7 @@ p.breadcrumb {
   position: absolute;
 }
 
-div#content > div.contextual {
+div#content>div.contextual {
   background: #f7f7f8;
   border-left: 1px solid #dbdee0;
   border-bottom: 1px solid #dbdee0;
@@ -305,7 +306,7 @@ div#content > div.contextual {
   margin-top: -7px !important;
 }
 
-div#content > div.contextual a {
+div#content>div.contextual a {
   display: inline-block;
   padding: 20px 15px 19px 20px;
 }
@@ -664,7 +665,7 @@ span.pagination {
 }
 
 /* Wiki page */
-div#content > div.wiki {
+div#content>div.wiki {
   padding: 0px !important;
 }
 
@@ -691,7 +692,7 @@ div.journal .details:hover {
   border: 1px solid #d7d7d7;
 }
 
-div.journal > div {
+div.journal>div {
   margin-top: 10px;
 }
 
@@ -929,8 +930,8 @@ div#main-menu li a.products.selected {
   /*border: inherit;*/
 }
 
-div#content > .message.details > h2,
-div#content > .board.details > h2 {
+div#content>.message.details>h2,
+div#content>.board.details>h2 {
   margin: -12px -20px 10px;
 }
 
@@ -946,9 +947,9 @@ div.message.reply {
 
 #topics_list,
 #forum_list,
-.controller-boards #content > .filters,
-.action-topics #content > .filters,
-.controller-questions.action-index #content > .filters {
+.controller-boards #content>.filters,
+.action-topics #content>.filters,
+.controller-questions.action-index #content>.filters {
   padding-left: 15px;
 }
 

@@ -774,6 +774,10 @@ span.pagination {
   padding: 2em;
 }
 
+.wiki-page{
+  margin-bottom: 22px;
+}
+
 .note .wiki {
   /* less padding on ticket notes */
   padding: 7px 0;

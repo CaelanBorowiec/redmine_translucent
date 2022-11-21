@@ -1,10 +1,6 @@
  if (window.jQuery) {
-
-   $(function () {
-     wallpaperPicker();
-   });
-
    $(document).ready(function () {
+     wallpaperPicker();
      var logo_img = $("#header > h1").css("background-image").replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, '')
      $("#header > h1").addClass('linklogo').before(`<a href="/"><img src="${logo_img}"></a>`)
 
@@ -55,6 +51,10 @@
  }
 
  function wallpaperPicker() {
+  $("#wrapper").css(
+    "background-image",
+    `unset`
+  );
    (function () {
      const wallpapers = {
        "backgrounds": [{

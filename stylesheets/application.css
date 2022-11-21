@@ -684,6 +684,20 @@ option {
   padding: 3px;
 }
 
+/* Calendar */
+table.cal td p.day-num {
+  padding-right: 2px;
+}
+
+table.cal td.week-number {
+  background-color: #d8d8d8;
+  padding: 6px;
+}
+
+table.cal thead th {
+  background-color: #d8d8d8;
+}
+
 /* Button styles */
 input[type="submit"] {
   background: none repeat scroll 0 0 #36a9e1;
@@ -754,6 +768,11 @@ span.pagination {
 .wiki {
   background: #fcfcfc;
   padding: 2em;
+}
+
+.note .wiki {
+  /* less padding on ticket notes */
+  padding: 7px 0;
 }
 
 .wiki img {

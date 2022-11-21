@@ -93,6 +93,8 @@ body {
 #top-menu {
   background: #34383c;
   padding: 7px 10px 2px 20px;
+  background-image: url(../images/textures/prism.png);
+  background-repeat: repeat;
 }
 
 #top-menu a {

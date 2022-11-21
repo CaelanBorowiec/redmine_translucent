@@ -25,6 +25,18 @@
   font-size: 22px !important;
 }
 
+#header > h1.linklogo {
+  background: unset;
+  padding: 5px 25px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+  font-size: 22px !important;
+}
+#header > a {
+  float: left;
+  margin-top: 7px;
+  margin-left: 15px;
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-device-pixel-ratio: 2) {
   #header > h1 {
@@ -398,7 +410,7 @@ div.issue.tooltip {
   margin: 0 0 6px 0;
 }
 
-div.ui-tooltip{
+div.ui-tooltip {
   color: #505050;
 }
 

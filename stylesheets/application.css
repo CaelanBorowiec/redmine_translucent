@@ -206,7 +206,7 @@ body.controller-projects div.box h3 {
   padding: 8px 8px 8px 18px;
 }
 
-body.controller-projects div.box h3.icon-group{
+body.controller-projects div.box h3.icon-group {
   padding-left: 22px;
 }
 
@@ -721,6 +721,12 @@ input[type="submit"]:hover {
   background: #58c3f7;
 }
 
+input[type="submit"].small {
+  height: 24px;
+  width: 65px;
+  border-radius: 3px;
+}
+
 /* Be cooler if this link had a class */
 form.edit_issue a[onclick="$('#update').hide(); return false;"] {
   background: none repeat scroll 0 0 #ff0000;
@@ -774,7 +780,7 @@ span.pagination {
   padding: 2em;
 }
 
-.wiki-page{
+.wiki-page {
   margin-bottom: 22px;
 }
 

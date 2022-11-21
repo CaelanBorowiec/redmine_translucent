@@ -30,6 +30,25 @@
   font-size: 30px;
   font-family: Rubik;
   letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: space-between;
+  height: 38px;
+}
+
+#header h1 .breadcrumbs {
+  font-size: .4em;
+}
+
+#header h1 .separator {
+  display: none;
+}
+
+#header h1 .current-project {
+  font-size: 20px;
+  display: block;
 }
 
 #header>h1.linklogo {
@@ -92,7 +111,9 @@ body {
 /* Top Menu area */
 #top-menu {
   background: #34383c;
-  padding: 7px 10px 2px 20px;
+  padding: 12px 10px 7px 20px;
+  background-image: url(../images/textures/prism.png);
+  background-repeat: repeat;
 }
 
 #top-menu a {
@@ -206,7 +227,7 @@ body.controller-projects div.box h3 {
   padding: 8px 8px 8px 18px;
 }
 
-body.controller-projects div.box h3.icon-group{
+body.controller-projects div.box h3.icon-group {
   padding-left: 22px;
 }
 
@@ -721,6 +742,12 @@ input[type="submit"]:hover {
   background: #58c3f7;
 }
 
+input[type="submit"].small {
+  height: 24px;
+  width: 65px;
+  border-radius: 3px;
+}
+
 /* Be cooler if this link had a class */
 form.edit_issue a[onclick="$('#update').hide(); return false;"] {
   background: none repeat scroll 0 0 #ff0000;
@@ -768,13 +795,45 @@ span.pagination {
   background-color: #fcfcfc;
 }
 
+.box.autoscroll {
+  padding-left: 6px;
+}
+
+#admin-index #admin-menu ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#admin-index #admin-menu ul li {
+  display: block;
+  border: 1px solid #ddd;
+  background: white;
+  width: 49%;
+  text-align: center;
+  font-size: x-large;
+  padding: 0;
+  margin: 1px;
+}
+
+#admin-index #admin-menu ul li a {
+  line-height: 2em;
+  background-size: auto 80%;
+  padding-left: 30px;
+}
+
+
+
 /* Wiki page */
 .wiki {
   background: #fcfcfc;
   padding: 2em;
 }
 
-.wiki-page{
+.wiki-page {
   margin-bottom: 22px;
 }
 

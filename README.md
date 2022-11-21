@@ -18,6 +18,8 @@ Easily customizable photo wallpaper backgrounds that change hourly.
 
 ### 1.2.0
 * Implement image theme subclasses
+* Dunes image now applies sand subtheme (changes title bars to sand color)
+* Disabled default photo background to eliminate distracting photo switching after initial page draw
 
 ### 1.1.1
 * Top left Redmine logo is now clickable to return to the site root.

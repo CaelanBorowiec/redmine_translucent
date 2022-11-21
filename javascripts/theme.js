@@ -87,7 +87,7 @@
          },
          {
            "name": "Forest Heat",
-           "file": "forst_heat.avif",
+           "file": "forest_heat.avif",
            "creator": "Johannes Plenio",
            "credit_url": "https://unsplash.com/photos/RwHv7LgeC7s",
            "theme_subclass": ""

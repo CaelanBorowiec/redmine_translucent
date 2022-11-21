@@ -197,13 +197,17 @@ body.controller-projects div.box p {
 }
 
 body.controller-projects div.box {
-  padding: 0px;
+  padding: 10px;
 }
 
 body.controller-projects div.box h3 {
   border-bottom: 1px solid #dbdee0;
   background-color: #f7f7f8;
   padding: 8px 8px 8px 18px;
+}
+
+body.controller-projects div.box h3.icon-group{
+  padding-left: 22px;
 }
 
 div#content>h2,

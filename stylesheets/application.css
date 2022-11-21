@@ -680,7 +680,10 @@ input[type="submit"] {
   height: 35px;
   width: 120px;
   vertical-align: top;
-  transition: filter 100ms linear;
+  transition: background 100ms linear;
+}
+input[type="submit"]:hover {
+  background: #58c3f7;
 }
 
 /* Be cooler if this link had a class */
@@ -694,12 +697,11 @@ form.edit_issue a[onclick="$('#update').hide(); return false;"] {
   border: none;
   padding: 10px 24px;
   vertical-align: top;
-  transition: filter 100ms linear;
-  text-decoration: none;
+  transition: background 100ms linear;
 }
-
-input[type="submit"]:hover, button[type="submit"]:hover, form.edit_issue a[onclick="$('#update').hide(); return false;"]:hover{
-  filter: brightness(150%);
+form.edit_issue a[onclick="$('#update').hide(); return false;"]:hover {
+  background: none repeat scroll 0 0 #ff1313;
+  text-decoration: none;
 }
 
 /* Pagination */

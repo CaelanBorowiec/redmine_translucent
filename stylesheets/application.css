@@ -680,6 +680,7 @@ input[type="submit"] {
   height: 35px;
   width: 120px;
   vertical-align: top;
+  transition: filter 100ms linear;
 }
 
 /* Be cooler if this link had a class */
@@ -693,6 +694,12 @@ form.edit_issue a[onclick="$('#update').hide(); return false;"] {
   border: none;
   padding: 10px 24px;
   vertical-align: top;
+  transition: filter 100ms linear;
+  text-decoration: none;
+}
+
+input[type="submit"]:hover, button[type="submit"]:hover, form.edit_issue a[onclick="$('#update').hide(); return false;"]:hover{
+  filter: brightness(150%);
 }
 
 /* Pagination */

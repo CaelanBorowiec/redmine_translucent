@@ -1,6 +1,6 @@
  if (window.jQuery) {
-     wallpaperPicker();
    $(document).ready(function() {
+     wallpaperPicker();
      var logo_img = $("#header > h1").css("background-image").replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, '')
      $("#header > h1").addClass('linklogo').before(`<a href="/"><img src="${logo_img}"></a>`)
 
@@ -26,6 +26,7 @@
    });
  } else {
    document.observe("dom:loaded", function() {
+     document.getElementById("wrapper").style.backgroundImage = "url(/themes/redmine_translucent/images/wallpapers/fall_lake.avif)";
      if (window.devicePixelRatio > 1) {
        var images = findImagesByRegexp('thumbnail', document);
 

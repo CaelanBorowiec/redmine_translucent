@@ -10,7 +10,7 @@
 }
 
 #wrapper {
-  background-image: url(../images/wallpapers/fall_lake.avif);
+  /* background-image: url(../images/wallpapers/fall_lake.avif); */
   /* Change this in order to set your own background image */
   background-repeat: no-repeat;
   background-size: cover;

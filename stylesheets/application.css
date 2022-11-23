@@ -733,7 +733,7 @@ input[type="submit"] {
   cursor: pointer;
   border: none;
   height: 35px;
-  width: 120px;
+  min-width: 120px;
   vertical-align: top;
   transition: background 100ms linear;
 }

@@ -363,7 +363,7 @@ div#content>div.contextual {
 
 .contextual .drdn-content {
   right: 0px;
-  top: -54px;
+  /* top: -54px; */
 }
 
 div#content>div.contextual a {
@@ -733,7 +733,7 @@ input[type="submit"] {
   cursor: pointer;
   border: none;
   height: 35px;
-  width: 120px;
+  min-width: 120px;
   vertical-align: top;
   transition: background 100ms linear;
 }
@@ -749,7 +749,9 @@ input[type="submit"].small {
 }
 
 /* Be cooler if this link had a class */
-form.edit_issue a[onclick="$('#update').hide(); return false;"] {
+/* Note that the quotes in the onclick= must exactly match the html elems */
+form.edit_issue a[onclick="$('#update').hide(); return false;"],
+form.new_news a[onclick='$("#add-news").hide()'] {
   background: none repeat scroll 0 0 #ff0000;
   color: #fff;
   border-radius: 5px;
@@ -824,8 +826,6 @@ span.pagination {
   background-size: auto 80%;
   padding-left: 30px;
 }
-
-
 
 /* Wiki page */
 .wiki {

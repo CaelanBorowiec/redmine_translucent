@@ -363,7 +363,7 @@ div#content>div.contextual {
 
 .contextual .drdn-content {
   right: 0px;
-  top: -54px;
+  /* top: -54px; */
 }
 
 div#content>div.contextual a {
@@ -826,8 +826,6 @@ span.pagination {
   background-size: auto 80%;
   padding-left: 30px;
 }
-
-
 
 /* Wiki page */
 .wiki {

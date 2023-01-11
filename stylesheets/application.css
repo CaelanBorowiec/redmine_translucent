@@ -1195,3 +1195,20 @@ button.ui-corner-all {
   font-family: inherit;
   font-size: inherit;
 }
+
+/************************
+* Responsive CSS Rules  *
+************************/
+@media screen and (max-width: 899px) {
+  #main {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media all and (max-width: 599px) {
+  #main {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}

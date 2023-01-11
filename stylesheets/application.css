@@ -6,6 +6,10 @@
   src: url(../fonts/Rubik/Rubik-VariableFont_wght.ttf);
 }
 
+html {
+  overflow-y: auto;
+}
+
 /* Simple dark version 0.0.1 by AlphaNodes GmbH http://alphanodes.com */
 #header {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);

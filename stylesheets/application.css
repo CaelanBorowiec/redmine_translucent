@@ -755,7 +755,8 @@ input[type="submit"].small {
 /* Be cooler if this link had a class */
 /* Note that the quotes in the onclick= must exactly match the html elems */
 form.edit_issue a[onclick="$('#update').hide(); return false;"],
-form.new_news a[onclick='$("#add-news").hide()'] {
+form.new_news a[onclick='$("#add-news").hide()'],
+#wiki_form>p>a[href*="/wiki/"] {
   background: none repeat scroll 0 0 #ff0000;
   color: #fff;
   border-radius: 5px;
@@ -768,7 +769,8 @@ form.new_news a[onclick='$("#add-news").hide()'] {
   transition: background 100ms linear;
 }
 
-form.edit_issue a[onclick="$('#update').hide(); return false;"]:hover {
+form.edit_issue a[onclick="$('#update').hide(); return false;"]:hover,
+#wiki_form>p>a[href*="/wiki/"]:hover {
   background: none repeat scroll 0 0 #fb3c3c;
   text-decoration: none;
 }

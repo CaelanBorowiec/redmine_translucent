@@ -1204,6 +1204,16 @@ button.ui-corner-all {
     margin-left: 20px;
     margin-right: 20px;
   }
+
+  #header {
+    background-color: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  #header>a {
+    float: right;
+    margin-top: 0px;
+    margin-left: 15px;
+  }
 }
 
 @media all and (max-width: 599px) {

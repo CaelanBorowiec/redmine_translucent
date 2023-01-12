@@ -834,12 +834,9 @@ span.pagination {
 }
 
 /* Wiki page */
-.wiki {
+.wiki-page {
   background: #fcfcfc;
   padding: 2em;
-}
-
-.wiki-page {
   margin-bottom: 22px;
 }
 

@@ -1205,14 +1205,22 @@ button.ui-corner-all {
     margin-right: 20px;
   }
 
-  #header {
-    background-color: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+  div#header {
+    background: #34383c;
+    background-image: url(../images/textures/prism.png);
+    background-repeat: repeat;
   }
 
   #header>a {
     float: right;
     margin-top: 0px;
     margin-left: 15px;
+  }
+
+  #header>a>img {
+    height: 62px;
+    padding: 10px 0;
+    margin-right: -20px;
   }
 }
 

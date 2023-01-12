@@ -6,6 +6,10 @@
   src: url(../fonts/Rubik/Rubik-VariableFont_wght.ttf);
 }
 
+html {
+  overflow-y: auto;
+}
+
 /* Simple dark version 0.0.1 by AlphaNodes GmbH http://alphanodes.com */
 #header {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
@@ -751,7 +755,8 @@ input[type="submit"].small {
 /* Be cooler if this link had a class */
 /* Note that the quotes in the onclick= must exactly match the html elems */
 form.edit_issue a[onclick="$('#update').hide(); return false;"],
-form.new_news a[onclick='$("#add-news").hide()'] {
+form.new_news a[onclick='$("#add-news").hide()'],
+#wiki_form>p>a[href*="/wiki/"] {
   background: none repeat scroll 0 0 #ff0000;
   color: #fff;
   border-radius: 5px;
@@ -764,7 +769,8 @@ form.new_news a[onclick='$("#add-news").hide()'] {
   transition: background 100ms linear;
 }
 
-form.edit_issue a[onclick="$('#update').hide(); return false;"]:hover {
+form.edit_issue a[onclick="$('#update').hide(); return false;"]:hover,
+#wiki_form>p>a[href*="/wiki/"]:hover {
   background: none repeat scroll 0 0 #fb3c3c;
   text-decoration: none;
 }
@@ -1188,4 +1194,21 @@ button.ui-corner-all {
 .ui-widget button {
   font-family: inherit;
   font-size: inherit;
+}
+
+/************************
+* Responsive CSS Rules  *
+************************/
+@media screen and (max-width: 899px) {
+  #main {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media all and (max-width: 599px) {
+  #main {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }

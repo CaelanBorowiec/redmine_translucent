@@ -1193,10 +1193,6 @@ button.ui-corner-all {
   font-size: inherit;
 }
 
-span.js-project-menu>ul>li>a.selected {
-  background: #3a8eb8;
-}
-
 /************************
 * Responsive CSS Rules  *
 ************************/
@@ -1204,6 +1200,14 @@ span.js-project-menu>ul>li>a.selected {
   #main {
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  span.js-project-menu>ul>li>a.selected {
+    background: #3a8eb8;
+  }
+
+  .flyout-menu ul li a.icon-only.icon-clear-query {
+    display: none;
   }
 
   #project-jump .drdn-trigger:before {

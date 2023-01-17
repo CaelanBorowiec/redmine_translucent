@@ -1193,6 +1193,10 @@ button.ui-corner-all {
   font-size: inherit;
 }
 
+span.js-project-menu>ul>li>a.selected {
+  background: #3a8eb8;
+}
+
 /************************
 * Responsive CSS Rules  *
 ************************/
@@ -1200,6 +1204,10 @@ button.ui-corner-all {
   #main {
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  #project-jump .drdn-trigger:before {
+    top: 5px;
   }
 
   div#header {

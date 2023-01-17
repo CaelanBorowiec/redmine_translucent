@@ -1,4 +1,4 @@
-# Redmine Translucent Theme 1.4.1
+# Redmine Translucent Theme 1.5.0
 
 This is a simple modern translucent theme with background photos and a left side menu. It has been forked and updated from the [bavarian_dawn](https://github.com/miyanaga/bavarian_dawn) theme to add compatibility for Redmine 5 and provide a variety of layout improvements.
 
@@ -15,6 +15,10 @@ Easily customizable photo wallpaper backgrounds that change hourly.
 (Redmine 5.x compatible!)
 
 ## Changelog
+
+### 1.5.0
+* Add mobile responsive CSS styles.
+* Other minor layout fixes.
 
 ### 1.4.1
 * Fixed some buttons not expanding to accommodate their text.

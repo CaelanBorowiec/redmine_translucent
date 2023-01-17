@@ -834,12 +834,9 @@ span.pagination {
 }
 
 /* Wiki page */
-.wiki {
+.wiki-page {
   background: #fcfcfc;
   padding: 2em;
-}
-
-.wiki-page {
   margin-bottom: 22px;
 }
 
@@ -1203,6 +1200,36 @@ button.ui-corner-all {
   #main {
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  span.js-project-menu>ul>li>a.selected {
+    background: #3a8eb8;
+  }
+
+  .flyout-menu ul li a.icon-only.icon-clear-query {
+    display: none;
+  }
+
+  #project-jump .drdn-trigger:before {
+    top: 5px;
+  }
+
+  div#header {
+    background: #34383c;
+    background-image: url(../images/textures/prism.png);
+    background-repeat: repeat;
+  }
+
+  #header>a {
+    float: right;
+    margin-top: 0px;
+    margin-left: 15px;
+  }
+
+  #header>a>img {
+    height: 62px;
+    padding: 10px 0;
+    margin-right: -20px;
   }
 }
 
